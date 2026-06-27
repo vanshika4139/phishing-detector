@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Link Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Phishing Link Detector</h1>
+    <p class="subtitle">Paste any URL — we'll check if it's safe</p>
+
+    <div class="input-row">
+      <input type="text" id="urlInput" placeholder="https://example.com/..." />
+      <button onclick="analyzeURL()">Scan karo</button>
+    </div>
+
+    <div class="loading" id="loading">⏳ Analyzing...</div>
+
+    <div id="resultArea"></div>
+    <div id="historyArea"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
